@@ -31,22 +31,26 @@
 
 .navbar {
     background-color: transparent;
-    padding: 15px;
+    padding: 10px;
 }
 
 .navbar a {
     color: $white-color;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
+    position: relative;
 }
 
 .navbar .navbar-brand {
-    font-size: $base-font + 20px;
+    font-size: $base-font + 6px;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: $white-color;
+}
+
+.navbar .nav-link>a {
+    border-bottom: 2px solid white;
 }
 
 .transform {

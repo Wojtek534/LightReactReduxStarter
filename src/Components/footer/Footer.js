@@ -6,7 +6,7 @@ const Footer = () => (
     <nav id="colophon">
       <div className="container-fluid text-center">
         <div className="row justify-content-md-center">
-            <p>Footer</p>
+          <p>Footer</p>
         </div>
       </div>
     </nav>

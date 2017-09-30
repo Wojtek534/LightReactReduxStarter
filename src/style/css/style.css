@@ -89,6 +89,10 @@ body {
   padding-top: 50px;
   padding-bottom: 50px; }
 
+.section {
+  border: 2px solid lightslategrey;
+  border-top: 15px solid lightslategray; }
+
 .home-logo {
   animation: App-logo-spin infinite 10s linear;
   height: 40px; }
@@ -115,19 +119,22 @@ body {
     transform: rotate(360deg); } }
 .navbar {
   background-color: transparent;
-  padding: 15px; }
+  padding: 10px; }
 
 .navbar a {
   color: #E5E5E5;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
-  text-decoration: none; }
+  position: relative; }
 
 .navbar .navbar-brand {
-  font-size: 32px; }
+  font-size: 18px; }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #E5E5E5; }
+
+.navbar .nav-link > a {
+  border-bottom: 2px solid white; }
 
 .transform {
   box-shadow: 0px 1px 1px #1E2429;

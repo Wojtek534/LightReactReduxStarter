@@ -21,15 +21,18 @@ class Navbar extends React.Component {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <NavLink href='/' className="nav-link">
+              <NavLink href='/'>
                 <div className="bt">Home</div>
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                href="/about"
-                className="nav-link">
+              <NavLink href="/about">
                 <div className="bt">About</div>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink href="/sample">
+                <div className="bt">ReduxReactSample</div>
               </NavLink>
             </li>
           </ul>
