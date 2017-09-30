@@ -1,8 +1,8 @@
 // React
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './Components/app/App';
+import './style/css/style.css';
+import App from './components/app/App';
 import registerServiceWorker from './registerServiceWorker';
 
 // Redux
