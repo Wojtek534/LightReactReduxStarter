@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+// Colors
+$main-color: #1E2429;
+$submain-color: #ffffff;
+$white-color: #E5E5E5;
+$text-color: #191919;
+//
+$header-color: #1E2429;
+$navtext-color:#ffffff;
+$navtexthover-color: #eecc4b;
+//
+$hr-color: #ffffff;
+//
+$footer-color: #1E2429;
+// Fonts
+$font: 'Roboto', sans-serif;
+$base-font: 12px;
+$base-weight: 300;
+$base-line-height: 1.4;
+
+@import "scss/typography";
+@import "scss/buttons";
+@import "scss/components";
+@import "scss/header";
+@import "scss/footer";

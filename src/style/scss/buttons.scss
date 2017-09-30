@@ -1,0 +1,18 @@
+.btn{
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 25px 25px 25px; // top-right-bottom-left
+    background: transparent;
+    border: 2px solid $white-color;
+    border-radius: 15px;
+}
+.btn:hover{
+    border: 2px solid $main-color;
+    background: transparent;
+    color: $white-color;
+    opacity: 0.8;
+    transition: 1s;
+}
+.bt{
+    padding: 3px 15px 3px 15px;
+}

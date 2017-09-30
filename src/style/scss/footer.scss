@@ -1,0 +1,30 @@
+// Footer
+#colophon {
+    background: $footer-color;
+    color: #ffffff;
+    font-size: 20px;
+    bottom: 0px;
+    width: 100%;
+    padding: 50px;
+}
+
+#colophon a {
+    color: #ffffff;
+}
+
+#colophon a:hover {
+    color: #555555;
+}
+
+#colophon h1,
+#colophon h2,
+#colophon h3,
+#colophon h4,
+#colophon h5,
+#colophon h6,
+#colophon p {
+    color: $white-color;
+}
+  #colophon hr{
+    color: $white-color;
+  }
