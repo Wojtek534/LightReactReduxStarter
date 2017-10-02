@@ -60,7 +60,6 @@ p {
   border-radius: 15px; }
 
 .btn:hover {
-  border: 2px solid #1E2429;
   background: transparent;
   color: #E5E5E5;
   opacity: 0.8;
@@ -91,7 +90,8 @@ body {
 
 .section {
   border: 2px solid lightslategrey;
-  border-top: 15px solid lightslategray; }
+  border-top: 15px solid lightslategray;
+  padding: 20px; }
 
 .home-logo {
   animation: App-logo-spin infinite 10s linear;
