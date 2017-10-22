@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
-import data from './dataReducer';
+import sample from './sampleReducer';
 
 // Combine all reducers in app
 const rootReducer = combineReducers({
-  data: data
+  sample: sample
 });
 export default rootReducer;

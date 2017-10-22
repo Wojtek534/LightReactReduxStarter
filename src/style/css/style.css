@@ -83,15 +83,13 @@ body {
 #home {
   text-align: center; }
 
-.page-section {
-  box-shadow: 2px 2px 2px 2px #E5E5E5;
-  padding-top: 50px;
-  padding-bottom: 50px; }
-
 .section {
   border: 2px solid lightslategrey;
   border-top: 15px solid lightslategray;
   padding: 20px; }
+
+header {
+  margin-bottom: 50px; }
 
 .home-logo {
   animation: App-logo-spin infinite 10s linear;

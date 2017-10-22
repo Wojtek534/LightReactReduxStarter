@@ -1,4 +1,4 @@
-import {delay} from 'mockSetup';
+import {delay} from './mockSetup';
 import sampleStore from './dataSample';
 
 class SampleApi {
@@ -17,7 +17,7 @@ class SampleApi {
         } else {
           sampleStore.push(sample)
         }
-        resolve(Object.assign[], sampleStore);
+        resolve(Object.assign([], sampleStore));
       }, delay);
     });
   }
@@ -33,3 +33,4 @@ class SampleApi {
     });
   }
 }
+export default SampleApi

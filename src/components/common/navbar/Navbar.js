@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../logo.svg';
+import logo from '../../../logo.svg';
 import {Nav, NavLink} from 'reactstrap';
 import './scripts/NavbarScript';
 
@@ -17,7 +17,8 @@ class Navbar extends React.Component {
           aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <NavLink href="/" className="navbar-brand"><img src={logo} className="logo" alt="logo"/>Sample App</NavLink>
+        <div className="container">
+        <NavLink href="/" className="navbar-brand"><img src={logo} className="logo" alt="logo"/>Sample App</NavLink></div>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">

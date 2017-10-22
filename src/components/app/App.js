@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import logo from '../../logo.svg';
 import Router from '../Router';
-import Navbar from '../navbar/Navbar';
-import Footer from '../footer/Footer';
+import Navbar from '../common/navbar/Navbar';
+import Footer from '../common/footer/Footer';
 import './App.css';
 
 class App extends Component {

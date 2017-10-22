@@ -8,32 +8,36 @@ import {bindActionCreators} from 'redux';
 import * as SampleActions from '../../redux/actions/sampleActions';
 // presentation
 import SampleForm from './presentation/SampleForm';
+import SampleTable from './presentation/SampleTable';
 
 class SamplePage extends React.Component {
-  constructor(props, context){
+  constructor(props, context) {
     super(props, context);
-    this.addData = this.addData.bind(this)
-    this.getData = this.getData.bind(this)
+    this.redirect = this
+      .redirect
+      .bind(this)
   }
-  addData (event) {
-    event.preventDefault();
-  }
-  getData(){
+  redirect() {
     BrowserRouter.push('/about');
+  }
+  sampleRow(sample, index){
+    return <div key={index}>{sample.id}</div>;
   }
   render()
   {
     return (
-    <div id = "sample" >
-      <div className="page-section">
-        <div className="col-md-4 offset-md-4">
-          <div className="section">
-            <SampleForm
-            onSubmit={this.getData}/>
+      <div id="sample">
+        <div className="container">
+          <div className="col">
+            <div className="section">
+              <h3>Loaded sample</h3>
+              {this.props.sample.map(this.sampleRow)}
+              <SampleTable SampleStore={this.props.sample}/>
+            </div>
           </div>
         </div>
       </div>
-    </div>)
+    )
   }
 }
 // Redux
@@ -41,18 +45,18 @@ class SamplePage extends React.Component {
 // Define output from actions
 SamplePage.propTypes = {
   actions: PropTypes.object.isRequired,
-  data: PropTypes.array.isRequired
+  sample: PropTypes.array.isRequired
 }
 
 function mapStateToProps(state, ownProps) {
   return {
     // from redux reducers index
-    data: state.data
+    sample: state.sample
   }
 }
 // function to fire off actions
-function mapDispatchToProps(dispatch){
-  return{
+function mapDispatchToProps(dispatch) {
+  return {
     actions: bindActionCreators(SampleActions, dispatch)
   }
 }
