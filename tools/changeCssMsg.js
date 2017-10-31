@@ -1,3 +1,3 @@
 const chalk = require ('chalk');
 
-console.log(chalk.blue("Changing Css file..."))
+console.log(chalk.underline.bold.magenta("Calculating Scss files..."));

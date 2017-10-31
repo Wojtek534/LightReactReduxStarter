@@ -2,6 +2,7 @@ import * as actions from './actionTypes';
 import sampleApi from '../../api/mockSample';
 
 export function loadSampleSuccess(sampleStore) {
+  debugger;
   return {type: actions.LOAD_SAMPLE_SUCCESS, sampleStore}
 }
 export function loadSample() {

@@ -8,6 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 // Redux
 import configureStore from './redux/store/configureStore';
 import {Provider} from 'react-redux';
+
 // Redux-Actions
 import {loadSample} from './redux/actions/sampleActions';
 
@@ -15,7 +16,7 @@ import {loadSample} from './redux/actions/sampleActions';
 import 'bootstrap/dist/js/bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
-// Const
+// Redux Store
 const store = configureStore();
 store.dispatch(loadSample());
 

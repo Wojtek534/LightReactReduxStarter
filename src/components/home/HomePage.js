@@ -9,14 +9,14 @@ class HomePage extends React.Component {
       <div id="home">
         <div className="page-section">
           <div className="col-md-4">
-            <p className="section">
+            <div className="section">
               <div className="container">
                 sample text
               </div>
               <div className="container">
                 2nd sample
               </div>
-            </p>
+            </div>
           </div>
         </div>
         <IntroSection/>

@@ -15,24 +15,31 @@ class SamplePage extends React.Component {
     super(props, context);
     this.redirect = this
       .redirect
-      .bind(this)
-  }
+      .bind(this);
+    this.loadFromJson = this
+      .loadFromJson
+      .bind(this);
+  };
   redirect() {
     BrowserRouter.push('/about');
-  }
-  sampleRow(sample, index){
+  };
+  sampleRow(sample, index) {
     return <div key={index}>{sample.id}</div>;
-  }
+  };
+  loadFromJson(){
+    alert(this.props.sample[2].values.start);
+  };
+  //<SampleTable SampleStore={this.props.sample}/>
   render()
   {
+    debugger;
     return (
       <div id="sample">
         <div className="container">
           <div className="col">
             <div className="section">
               <h3>Loaded sample</h3>
-              {this.props.sample.map(this.sampleRow)}
-              <SampleTable SampleStore={this.props.sample}/>
+              <button className="bg primary" onClick={this.loadFromJson}>Alert</button>
             </div>
           </div>
         </div>
@@ -49,6 +56,7 @@ SamplePage.propTypes = {
 }
 
 function mapStateToProps(state, ownProps) {
+  debugger;
   return {
     // from redux reducers index
     sample: state.sample
