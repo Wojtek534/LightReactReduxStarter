@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import './style/css/style.css';
 import App from './components/app/App';
 import registerServiceWorker from './registerServiceWorker';
+import './setWindow';
 
 // Redux
 import configureStore from './redux/store/configureStore';
